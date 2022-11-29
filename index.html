@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style.css">
+<title>doc</title>
+</head> 
+
+<body>
+    <script>
+
+    function click_b(){
+      var x = document.getElementById("txt1").value;
+      var y = document.getElementById("txt2").value;
+      myWin= open("","displayWindow", "width=800 ,height=800,status=no,toolbar=no,menubar=no");
+            myWin.document.open();
+            myWin.moveTo(x,y);
+          
+    }
+
+    </script>
+
+
+<div>Введите x:<input type="label" id="txt1" class="text"></div>
+<div>Введите y:<input type="label" id="txt2" class="text"></div>
+<div><input type="button" id="button1" onclick="click_b()" class="button" value="Открыть"></div>
+
+</div>
+
+</body>
+</html>
